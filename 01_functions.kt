@@ -6,7 +6,9 @@ fun main(Array<String< args){
     b=2
     c=3
 
-
+//inline
+//infix
+//operator
     
 }
 
