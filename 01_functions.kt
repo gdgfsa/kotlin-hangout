@@ -23,7 +23,7 @@ fun main(args: Array<String>){
 fun sum(a: Int,b: Int): Int{
     return a+b
 }
-//inline
+
 fun sum2(a: Int,b: Int)=a+b
 //Unit é o mesmo que void e pode ser omitido
 fun printSum(a: Int,b: Int): Unit{
