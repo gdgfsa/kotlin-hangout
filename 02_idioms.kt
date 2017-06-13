@@ -48,38 +48,12 @@ fun main(args:Array<String>){
     for (x in 10 downTo 1) { ... }
     if (x in 1..10) { ... }*/
 
-    //extension functions
-    infix fun String.hello(greeting: String)="$greeting, $this"
-    println("World".hello("Hello"))
-
     println(Resource.name)
-
-    val bike: Bike=Bike()
-
-    with(bike){
-        throttle()
-        turn(10)
-    }
 
     println(fun123(1))
 }
 object Resource {
     val name = "GDG"
-}
-
-class Bike {
-    var speed: Int
-    var direction: Int
-    constructor(){
-        speed=0
-        direction=0
-    }
-    
-    fun throttle(): Int=speed++
-    
-    fun turn(degrees: Int){
-        direction=degrees
-    }
 }
 
 fun count(initValue:Int=10):Int {
